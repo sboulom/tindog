@@ -23,7 +23,7 @@
 
 <body>
 
-  <section id="title">
+  <section class ="colored-section" id="title">
     <div class="container-fluid">
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -35,13 +35,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
+            <a class="nav-link" href="#footer">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Pricing</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Download</a>
+            <a class="nav-link" href="#cta">Download</a>
           </li>
         </ul>
       </div>
@@ -52,7 +52,7 @@
 
    <div class="row">
      <div class="col-lg-6">
-      <h1>Meet new and interesting dogs nearby.</h1>
+      <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
       <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
       <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
      </div>
@@ -66,8 +66,8 @@
 
   <!-- Features -->
 
-  <section id="features">
-    <div class="container">
+  <section class="white-section" id="features">
+    <div class="container-fluid">
 
       <div class="row">
         <div class="feature-box col-lg-4">
@@ -96,16 +96,17 @@
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <section class="colored-section" id="testimonials">
+
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
    <div class="carousel-inner">
-     <div class="carousel-item active">
-      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on tinDog. Woof.</h2>
+     <div class="carousel-item active container-fluid">
+      <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on tinDog. Woof.</h2>
     <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
     <em>Pebbles, New York</em>
     </div>
-    
-    <div class="carousel-item">
+
+    <div class="carousel-item container-fluid">
       <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
       <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
       <em>Beverly, Illinois</em>
@@ -127,7 +128,7 @@
 
   <!-- Press -->
 
-  <section id="press">
+  <section class="colored-section" id="press">
     <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
     <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
@@ -138,56 +139,82 @@
 
   <!-- Pricing -->
 
-  <section id="pricing">
+  <section class="white-section" id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
+    <h2 class="price-text">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
+ <div class="row">
+   <div class="pricing-column col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Chihuahua</h3>
+      </div>
+    <div class="card-body">
+      <h2 class="price-text">Free</h2>
+      <p>5 Matches Per Day</p>
+      <p>10 Messages Per Day</p>
+      <p>Unlimited App Usage</p>
+      <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign up for free</button>
+      <!-- <button type="button">Sign Up</button> -->
+    </div>
+    </div> 
+   </div>
+   <div class="pricing-column col-lg-4 col-md-6">
+     <div class="card">
+       <div class="card-header">
+         <h3>Labrador</h3>
+       </div>
+     <div class="card-body">
+       <h2 class="price-text">$49 / mo</h2>
+       <p>Unlimited Matches</p>
+       <p>Unlimited Messages</p>
+       <p>Unlimited App Usage</p>
+       <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+     </div>
+     </div>
+   </div>
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
+   <div class="pricing-column col-lg-4">
+     <div class="card">
+       <div class="card-header">
+         <h3>Mastiff</h3>
+       </div>
+     <div class="card-body">
+       <h2 class="price-text">$99 / mo</h2>
+       <p>Pirority Listing</p>
+       <p>Unlimited Matches</p>
+       <p>Unlimited Messages</p>
+       <p>Unlimited App Usage</p>
+       <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+     </div>
+     </div>
+    </div>
+    </div>
   </section>
 
 
   <!-- Call to Action -->
 
-  <section id="cta">
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+      <h3 id="cta-text">Find the True Love of Your Dog's Life Today.</h3>
+      <button type="button" class="download-button btn btn-lg btn-dark"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="download-button btn btn-lg btn-light"><i class="fab fa-google-play"></i>  Download</button>
+    </div>
   </section>
 
 
   <!-- Footer -->
 
-  <footer id="footer">
-
-    <p>© Copyright 2018 TinDog</p>
-
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="footer-icon fab fa-twitter"></i>
+      <i class="footer-icon fab fa-facebook-square"></i>
+      <i class="footer-icon fab fa-instagram"></i>
+      <i class="footer-icon far fa-envelope"></i>
+      <p>© Copyright 2020 Steven Boulom TinDog</p>
+    </div>
   </footer>
 
 
